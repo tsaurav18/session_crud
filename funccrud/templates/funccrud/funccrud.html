@@ -2,13 +2,14 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>싀알류디연습</title>
+    <title>practice</title>
 </head>
 <body>
     {% if user.is_authenticated %}
     <a href="{% url 'newblog' %}">글쓰기</a>
     {% endif %}
-    {% for blog in blogs %}
+     
+    {% for blog in blogs%}
         <h2>{{blog.title}}</h2>
         <h3>{{blog.author}}</h3>
         <h5>{{blog.created_date}}</h5>
